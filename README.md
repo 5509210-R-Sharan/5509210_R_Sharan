@@ -1,3 +1,3 @@
 # 5509210_R Sharan
 ## 📝 SDLC - Great Learning
-![SDLC Certificate](sdlc_certificate.png)
+[![SDLC Certificate](SDLC/sdlc_certificate.png)]
