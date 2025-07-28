@@ -3,4 +3,4 @@
 [![SDLC Certificate](SDLC/sdlc_certificate.png)]
 
 ## 📝 GIT - Simplilearn
-[![GIT Certificate]()]
+[![GIT Certificate](Git/git_certificate.png)]
