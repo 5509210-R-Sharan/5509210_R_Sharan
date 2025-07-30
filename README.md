@@ -10,7 +10,7 @@
 I am documenting my daily Linux practice.  
 For each day, I include **one sample screenshot here** and the **full set of screenshots in PDF format** inside the `Linux/` folder.
 
-### 📌 Day 1
+### 📌 Day 2
 Sample Screenshot:  
 ![Day 1 Commands](Linux/history1.png)  
 
