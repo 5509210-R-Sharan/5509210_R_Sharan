@@ -14,6 +14,6 @@ For each day, I include **one sample screenshot here** and the **full set of scr
 Sample Screenshot:  
 ![Day 1 Commands](Linux/history1.png)  
 
-👉 Full screenshots: [Linux/Day1_Commands.pdf](Linux/Day1_Commands.pdf)
+👉 Full screenshots: [Linux/Linux_commands_Day2.pdf](Linux/Linux_commands_Day2.pdf)
 
 ---
