@@ -18,6 +18,8 @@ Sample Screenshot:
 
 ---
 
-### 📌 Day 2
+### 📌 Day 3
 Sample Screenshot:  
 ![Day 3 Commands](Linux/history2.png)
+
+👉 Full screenshots: [Linux/Linux_commands_Day3.pdf](Linux/Linux_commands_Day3.pdf)
