@@ -1,0 +1,24 @@
+1. Week-1 Plus Minus Problem
+
+def Plus_Minus(n, arr):
+    positive_num = negative_num = zero = 0
+    
+    for num in arr:
+        if num > 0:
+            positive_num += 1
+        elif num < 0:
+            negative_num += 1
+        else:
+            zero += 1   
+            
+    total_positive_num = positive_num / n 
+    total_negative_num = negative_num / n
+    total_zero = zero / n
+    
+    print(f"{total_positive_num:.6f}")
+    print(f"{total_negative_num:.6f}")
+    print(f"{total_zero:.6f}")
+    
+n = int(input())
+arr = list(map(int, input().split()))
+Plus_Minus(n, arr)

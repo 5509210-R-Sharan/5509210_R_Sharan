@@ -1,0 +1,11 @@
+2. Week-1 Mini-Max Sum Problem
+
+def Mini_Max_Sum(arr):
+    total_sum = sum(arr)
+    minimum_sum = total_sum - max(arr)
+    maximum_sum = total_sum - min(arr)
+    
+    print(minimum_sum, maximum_sum)
+    
+arr = list(map(int, input().split()))
+Mini_Max_Sum(arr)
