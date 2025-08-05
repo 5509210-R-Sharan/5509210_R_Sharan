@@ -23,3 +23,6 @@ Sample Screenshot:
 ![Day 3 Commands](Linux/history2.png)
 
 👉 Full screenshots: [Linux/Linux_commands_Day3.pdf](Linux/Linux_commands_Day3.pdf)
+
+## 📝 C Program - Sololearn
+[![C Certificate](C_Program/C_certificate.jpg)]
