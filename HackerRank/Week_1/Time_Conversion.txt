@@ -1,0 +1,19 @@
+3. Week-1 Time Conversion Problem
+
+def time_conversion(t):
+    period = t[-2:]
+    hour = int(t[:2])
+    min_sec = t[2:-2]
+    
+    if period == "AM":
+        if hour == 12:
+            hour = 0
+    else:
+        if hour != 12:
+            hour +=12
+            
+    print(f"{hour:02}{min_sec}") 
+    
+t=input().strip()
+time_conversion(t)
+        

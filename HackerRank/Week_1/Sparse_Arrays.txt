@@ -1,0 +1,36 @@
+4. Week-1 Sparse Arrays Problem
+
+def sparse_arr(s, q):
+    freq = {}
+    
+    for _ in s:
+        if _ in freq:
+            freq[_] += 1
+        else:
+            freq[_] = 1  
+            
+    rslt = []
+    for _ in q:
+        if _ in freq:
+            rslt.append(freq[_])
+        else:
+            rslt.append(0)
+            
+    return rslt
+    
+n = int(input().strip())
+s = []
+for i in range(n):
+    a = input().strip()
+    s.append(a)
+    
+t = int(input().strip())
+q = []
+for i in range(t):
+    b = input().strip()
+    q.append(b)
+    
+result = sparse_arr(s, q)
+
+for i in result:
+    print(i)
