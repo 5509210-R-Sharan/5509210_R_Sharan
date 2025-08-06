@@ -1,0 +1,18 @@
+5. Week-1 Lonely Integer Problem
+
+def lonely_integer(a):
+    freq = {}
+    
+    for element in a:
+        if element in freq:
+            freq[element] += 1
+        else:
+            freq[element] = 1
+            
+    for element in freq:
+        if freq[element] == 1:
+            return element
+
+n = int(input().strip())
+a = list(map(int, input().split()))
+print(lonely_integer(a))

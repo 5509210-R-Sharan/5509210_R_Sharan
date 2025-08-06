@@ -1,0 +1,9 @@
+6. Week-1 Flipping bits Problem
+
+def flipping_bits(n):
+    return 4294967295 - n
+    
+t = int(input())
+for i in range(t):
+    n = int(input().strip())
+    print(flipping_bits(n))
