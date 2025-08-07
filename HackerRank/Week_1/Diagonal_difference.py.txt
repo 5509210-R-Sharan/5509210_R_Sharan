@@ -1,0 +1,23 @@
+7. Week-1 Diagonal Difference Problem
+
+def diagonal_diff(arr):
+    n = len(arr)
+    diagonal_1 = 0
+    diagonal_2 = 0
+    
+    for i in range(n):
+        diagonal_1 += arr[i][i]
+        diagonal_2 += arr[i][n - 1 - i]
+        
+    abs_diff = abs(diagonal_1 - diagonal_2)
+    
+    return abs_diff
+    
+n = int(input())
+arr = []
+
+for i in range(n):
+    r = list(map(int, input().split()))
+    arr.append(r)
+    
+print(diagonal_diff(arr))                
