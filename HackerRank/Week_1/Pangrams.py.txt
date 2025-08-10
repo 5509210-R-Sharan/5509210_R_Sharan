@@ -1,0 +1,17 @@
+9. Week-1 Pangrams Problem
+
+def pangrams(s):
+    s = s.lower()
+    
+    l = set()
+    for c in s:
+        if c.isalpha():
+            l.add(c)
+            
+    if len(l) == 26:
+        return "pangram"
+    else:
+        return "not pangram" 
+        
+s = input().strip()
+print(pangrams(s))
