@@ -1,0 +1,17 @@
+11. Week-1 Subarray Division 1 Problem
+
+def subarray(s, d, m):
+    c = 0
+    l = len(s)
+    
+    for i in range(l - m + 1):
+        if sum(s[i:i + m]) == d:
+            c += 1
+            
+    return c
+
+l = int(input().strip())
+s = list(map(int, input().strip().split()))
+d, m = map(int, input().strip().split())
+
+print(subarray(s, d, m))
