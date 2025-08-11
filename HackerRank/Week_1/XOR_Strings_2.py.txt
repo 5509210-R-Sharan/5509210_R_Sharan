@@ -1,4 +1,4 @@
-12. Week-1 Subarray Division 1 Problem
+12. Week-1 XOR Strings 2 Problem
 
 def strings_xor(s, t):
     res = ""
