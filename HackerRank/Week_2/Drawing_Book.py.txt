@@ -1,0 +1,14 @@
+3. Week-2 Drawing Book Problem
+
+def page_num(n, p):
+    a = p // 2
+    b = (n // 2) - (p // 2)
+    
+    if a < b:
+        return a
+    else:
+        return b
+        
+n = int(input().strip())
+p = int(input().strip())
+print(page_num(n, p))
