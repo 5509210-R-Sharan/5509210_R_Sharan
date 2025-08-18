@@ -1,0 +1,27 @@
+5. Week-2 Caesar Cipher Problem
+
+def caesar_cipher(n, s, k):
+    lower_alph = "abcdefghijklmnopqrstuvwxyz"
+    upper_alph = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    result =[]
+    
+    for ch in s:
+        if ch in upper_alph:
+            index = upper_alph.index(ch)
+            rotated_alph = upper_alph[(index+k) % 26]
+            result.append(rotated_alph)
+        elif ch in lower_alph:
+            index = lower_alph.index(ch)
+            rotated_alph = lower_alph[(index+k) % 26]
+            result.append(rotated_alph)
+        else:
+            result.append(ch)
+            
+    for _ in result:
+        print(_, end="")
+
+
+n = int(input().strip())       
+s = input().strip()
+k = int(input().strip())
+caesar_cipher(n, s, k)
