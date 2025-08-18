@@ -1,0 +1,21 @@
+6. Week-2 Max Min Problem
+
+def max_min(k, arr):
+    arr.sort()
+    minimum = float("inf")
+    
+    for i in range(len(arr) - k + 1):
+        result = arr[i + k - 1] - arr[i]
+        if minimum > result:
+            minimum = result
+    return minimum        
+
+
+n = int(input())
+k = int(input())     
+    
+arr = []
+for _ in range(n):
+    a = int(input())
+    arr.append(a)
+print(max_min(k, arr))
