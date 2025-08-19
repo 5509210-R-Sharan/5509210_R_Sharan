@@ -1,0 +1,23 @@
+8. Week-2 Grid Challenge Problem
+
+def grid_challenge(arr):
+    for i in range(len(arr)):
+        arr[i] = "".join(sorted(arr[i]))
+    a = len(arr)
+    b = len(arr[0])  
+
+    for c in range(b):             
+        for r in range(a - 1):     
+            if arr[r][c] > arr[r + 1][c]:
+                return "NO"
+    return "YES"
+
+
+t = int(input().strip()) 
+for _ in range(t):
+    n = int(input().strip())
+    arr = []
+    for _ in range(n):
+        s = input().strip()
+        arr.append(s)
+    print(grid_challenge(arr))
