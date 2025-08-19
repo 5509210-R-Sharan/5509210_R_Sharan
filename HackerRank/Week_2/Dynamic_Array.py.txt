@@ -1,0 +1,30 @@
+7. Week-2 Dynamic Array Problem
+
+def dynamic_array(n, q):
+    
+    arr = []
+    for _ in range(n):
+        arr.append([])
+    lastAnswer = 0
+    results = []
+
+    for query in queries:
+        t, x, y = query
+        idx = (x ^ lastAnswer) % n  
+
+        if t == 1:
+            arr[idx].append(y)
+        elif t == 2:
+            lastAnswer = arr[idx][y % len(arr[idx])]
+            results.append(lastAnswer)
+
+    return results
+
+n, q = map(int, input().split())
+queries = []
+for _ in range(q):
+    queries.append(list(map(int, input().split())))
+
+results = dynamic_array(n, q)
+for r in results:
+    print(r)
