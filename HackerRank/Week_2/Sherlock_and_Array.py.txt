@@ -1,0 +1,18 @@
+10. Week-2 Sherlock and Array Problem
+
+def sherlock_array(arr):
+    t_sum = sum(arr)
+    l_sum = 0
+    
+    for n in arr:
+        if l_sum == t_sum - l_sum - n:
+            return "YES"
+        l_sum += n
+        
+    return "NO"
+
+t = int(input().strip())
+for _ in range(t):
+    n = int(input().strip())
+    arr = list(map(int, input().split()))
+    print(sherlock_array(arr))
