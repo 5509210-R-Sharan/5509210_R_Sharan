@@ -1,0 +1,19 @@
+11. Week-2 Recursive Digit Sum Problem
+
+def rec_dig_sum(n, k):
+    def dig_sum(a):
+        Sum = 0
+        for ch in str(a):
+            Sum += int(ch)
+        return Sum
+ 
+    total = dig_sum(n) * k
+    
+    while total >= 10:
+        total = dig_sum(total)
+    
+    return total
+
+n, k = input().split()
+k = int(k)
+print(rec_dig_sum(n, k))
