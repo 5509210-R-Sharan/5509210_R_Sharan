@@ -1,0 +1,16 @@
+13. Week-2 Sum vs Xor Problem
+
+def sum_xor(n):
+    if n == 0:
+        return 1
+
+    z = 0
+    while n > 0:
+        if n % 2 == 0:     
+            z += 1
+        n //= 2
+        result = 2 ** z            
+    return result
+
+n = int(input().strip())
+print(sum_xor(n))
