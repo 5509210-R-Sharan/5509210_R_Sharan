@@ -1,4 +1,4 @@
-13. Week-2 Sum vs Xor Problem
+13. Week-2 Sum vs XOR Problem
 
 def sum_xor(n):
     if n == 0:
