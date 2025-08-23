@@ -1,0 +1,51 @@
+1. Week-3 The Bomberman Game Problem
+
+def bomberman_game(n, g):
+    r, c = len(g), len(g[0])
+
+    def full_grid():
+        rows = []
+        for _ in range(r):
+            rows.append(c * 'O')
+        return rows
+
+    def explode(g):
+        result = []
+        for _ in range(r):
+            row = list(c * 'O')
+            result.append(row)
+            
+        directions = [(0, 0), (1, 0), (-1, 0), (0, 1), (0, -1)]
+        for i in range(r):
+            for j in range(c):
+                if g[i][j] == 'O':
+                    for di, dj in directions:
+                        ni, nj = i + di, j + dj
+                        if 0 <= ni < r and 0 <= nj < c:
+                            result[ni][nj] = '.'
+        results = []
+        for row in result:
+            s = ''.join(row)  
+            results.append(s)
+        return results
+
+    if n == 1:
+        return g
+    if n % 2 == 0:
+        return full_grid()
+
+    f = explode(g)
+    s = explode(f)
+    if n % 4 == 3:
+        return f
+    else:
+        return s
+
+r, c, n = map(int, input().split())
+g = []
+for _ in range(r):
+    a = input().strip()
+    g.append(a)
+result = bomberman_game(n, g)
+for row in result:
+    print(row)
