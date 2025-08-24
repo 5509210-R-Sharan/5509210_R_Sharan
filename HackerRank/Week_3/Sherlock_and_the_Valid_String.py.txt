@@ -1,0 +1,40 @@
+3. Week-3 Sherlock and the Valid String Problem
+
+def valid_string(s):
+    freq = {}
+    for c in s:
+        if c in freq:
+            freq[c] += 1
+        else:
+            freq[c] = 1
+
+    a = list(freq.values())
+    b = list(set(a))
+
+    if len(b) == 1:
+        return "YES"
+
+    if len(b) > 2:
+        return "NO"
+        
+    f1, f2 = b
+
+    count_1 = 0
+    for v in a:
+        if v == f1:
+            count_1 += 1
+            
+    count_2 = 0
+    for v in a:
+        if v == f2:
+            count_2 += 1
+            
+    if count_1 == 1 and (f1 - 1 == f2 or f1 == 1):
+        return "YES"
+    if count_2 == 1 and (f2 - 1 == f1 or f2 == 1):
+        return "YES"
+
+    return "NO"
+
+s = input().strip()
+print(valid_string(s))
