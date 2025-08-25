@@ -1,0 +1,23 @@
+4. Week-3 Climbing the Leaderboard Problem.
+
+def climbing_leaderboard(ranked, player):
+    unique = []
+    for s in ranked:
+        if not unique or unique[-1] != s:
+            unique.append(s)
+
+    res = []
+    l = len(unique) - 1
+    for p in player:
+        while p >= unique[l] and l >= 0:
+            l -= 1
+        res.append(l + 2)
+    return res
+
+n = int(input().strip())
+ranked = list(map(int, input().strip().split()))
+m = int(input().strip())
+player = list(map(int, input().strip().split()))
+result = climbing_leaderboard(ranked, player)
+for i in result:
+    print(i)
